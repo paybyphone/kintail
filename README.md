@@ -3,6 +3,10 @@
 ## Usage:
 
 ```
+git clone https://github.com/paybyphone/kintail.git
+cd kintail
+go get
+go install
 kintail -h
 
 Usage of kintail:
@@ -10,7 +14,17 @@ Usage of kintail:
   -i="LATEST": Shard iterator type.
   -r="": AWS region, e.g. 'us-west-2'
   -s="": Kinesis stream name
+
 ```
+
+You'll need an ~/.aws/credentials file to access your stream:
+
+```
+[default]
+aws_access_key_id = MY_ACCESS_KEY_ID
+aws_secret_access_key = MY_TERRIBLE_SECRET
+```
+
 
 ## Example:
 
