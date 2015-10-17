@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"bitbucket.org/rreppel/kinchan"
+	"github.com/paybyphone/kinchan"
 )
 
 func main() {
