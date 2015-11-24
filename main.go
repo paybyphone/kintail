@@ -24,7 +24,7 @@ func main() {
 
 	messageChannel := make(chan []byte, 1000)
 	for _, shard := range shards {
-		go kinchan.Consume(shard, awsKinesisStreamName, awsKinesisShardIteratorType, messageChannel)
+		go kinchan.Consume(shard, awsKinesisStreamName, awsRegion, awsKinesisShardIteratorType, messageChannel)
 	}
 
 	go logMessagesToConsole(messageChannel)
