@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/paybyphone/kinchan"
+	"github.com/paybyphone/kintail/Godeps/_workspace/src/github.com/paybyphone/kinchan"
 )
 
 func main() {
