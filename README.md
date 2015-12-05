@@ -1,12 +1,12 @@
-# Tails AWS Kinesis Stream to Console
+Tails AWS Kinesis Stream to Console
+===================================
 
-## Usage:
+Usage:
+------
 
 ```
-git clone https://github.com/paybyphone/kintail.git
-cd kintail
-go get
-go install
+go get github.com/paybyphone/kintail
+
 kintail -h
 
 Usage of kintail:
@@ -25,8 +25,8 @@ aws_access_key_id = MY_ACCESS_KEY_ID
 aws_secret_access_key = MY_TERRIBLE_SECRET
 ```
 
-
-## Example:
+Example:
+--------
 
 ```
 kintail -r us-west-2 -s MyKinesisStreamName
