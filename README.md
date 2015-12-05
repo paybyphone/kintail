@@ -32,3 +32,6 @@ Example:
 kintail -r us-west-2 -s MyKinesisStreamName
 
 ```
+
+* Will process all available shards.
+* Does not currently detect re-sharding. 
